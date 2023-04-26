@@ -1,0 +1,95 @@
+/* :root {
+    --text-color: #2d2d2d;
+    --bg-color: #3cd6d2;
+    --light-color: #9df2f9;
+    --accent-color: #efbe22;
+    /* --neutral-color: #dedede; */
+    /* --dark-color: rgb(3, 42, 60);
+ 
+} */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    /* margin: auto; */
+    background-color: #222;
+    color: #fff;
+}
+
+main {
+    padding: 3rem;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+    width: 65%;
+}
+
+.hero h1 {
+    color: hsl(208, 85%, 62%);
+    font-size: clamp(2.5rem, 8vw + .5rem, 6rem);
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-image: url('images/bg-colors2.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.heroPic {
+    /* mask-image: linear-gradient(
+                rgb(0 0 0 / 1),
+                rgb(0 0 0 / .5) 30%, 
+                rgb(0 0 0 / 0)
+                );
+    -webkit-mask-image: linear-gradient(
+                rgb(0 0 0 / 1),
+                rgb(0 0 0 / .5) 30%, 
+                rgb(0 0 0 / 0)
+                ); */
+    mask-image: url('images/film-solid.svg');
+    -webkit-mask-image: url('images/film-solid.svg');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: top left;
+    -webkit-mask-position: top left;
+
+}
+
+main img {
+    float: left;
+    padding-left: 10px;
+    max-width: 300px;
+    mask-image: url('images/film-solid.svg');
+    -webkit-mask-image: url('images/film-solid.svg');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: top left;
+    -webkit-mask-position: top left;
+    transform : scaleX(-1);
+    shape-outside: url('images/repeat5.jpg');
+    
+
+}
